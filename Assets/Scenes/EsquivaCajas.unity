@@ -257,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.32, z: -5.14}
+  m_LocalPosition: {x: 0, y: 2.61, z: -5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -276,9 +276,10 @@ GameObject:
   - component: {fileID: 966657094}
   - component: {fileID: 966657093}
   - component: {fileID: 966657097}
+  - component: {fileID: 966657098}
   m_Layer: 0
   m_Name: Caja
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,6 +369,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caida: 1
+--- !u!54 &966657098
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966657092}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &997334789
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +398,7 @@ GameObject:
   - component: {fileID: 997334791}
   - component: {fileID: 997334790}
   - component: {fileID: 997334794}
+  - component: {fileID: 997334795}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -470,6 +488,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31248089132ad3c4499f7162daa6fcb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &997334795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997334789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d57f6a57790653419451e13b589ce54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1122913640
