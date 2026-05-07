@@ -34,5 +34,6 @@ public class CajaMovement : MonoBehaviour
         }
         newPosition.y = initialYValue;
         transform.position = newPosition;
+        caida = caida + 0.1f;
     }
 }
