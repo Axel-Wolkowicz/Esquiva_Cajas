@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerCollisionDetection : MonoBehaviour
 {
+    public GameTimer GameTimerScript;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -19,6 +19,7 @@ public class PlayerCollisionDetection : MonoBehaviour
     void OnCollisionEnter(Collision col){
     if (col.gameObject.CompareTag("Caja")){
         Destroy(gameObject);
+        GameTimerScript.GameOver();
     }
 }
 }
